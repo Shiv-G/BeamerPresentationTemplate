@@ -1,0 +1,99 @@
+\documentclass[8pt]{beamer}
+%\setbeamersize{text margin left=20pt,text margin right=25pt}
+%\usepackage{lmodern}
+\usepackage[scaled=0.92]{helvet}
+\usepackage[T1]{fontenc}
+\usepackage{subfigure}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{dsfont}
+\usepackage{bm}
+\mode<presentation>
+\usecolortheme[cmyk={.66,0.36,0,0.3}]{structure}
+\usepackage{IEEEtrantools}
+\useoutertheme{split}
+\useoutertheme{default}
+\usepackage{epsfig}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\linespread{1.1}
+
+%added by Shiv
+\usepackage{multicol}
+\setlength{\columnsep}{0.6cm}
+
+\usepackage[T1]{fontenc}
+%%\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+
+\definecolor{SU_blue}{RGB}{60, 115, 179}
+\definecolor{medsea}{RGB}{60,179,113}
+\definecolor{red}{RGB}{245,0,0}
+
+\setbeamercolor*{title}{use=structure,fg=white,bg=structure.fg,}
+\setbeamertemplate{title page}[default][colsep=-4bp,rounded=true,shadow=false]
+
+\usepackage[bibstyle=authortitle,citestyle=authoryear,maxcitenames=5,mincitenames=4,maxbibnames=1000,backend=biber]{biblatex}
+
+
+\addbibresource{biblio.bib}
+\renewcommand*{\nameyeardelim}{\addcomma\space}
+
+
+%Beamer footer
+\makeatother
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle\hspace*{3em}
+    \hfill\hfill\hfill\hfill\hfill\hfill\hfill\hfill\hfill\insertframenumber{} / \inserttotalframenumber
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\makeatletter
+\setbeamertemplate{navigation symbols}{}
+
+
+%Math
+\def\E{{\mathbb E}}
+\def\non{\nonumber\\}
+\newcommand{\cht}{{{i}}}
+\def\Idm{{\bf I}}
+\def\snr {\mbox{\sf{\footnotesize SNR}}\,}
+\def\sinr {\mbox{\sf{\footnotesize SINR}}\,}
+
+\newcommand{\SFCm}{\hbox{\boldmath$\Xi$}}
+\newcommand{\SFC}{\hbox{$\xi$}}
+\newcommand{\SFCv}{\hbox{\boldmath$\xi$}}
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bes}{\begin{equation*}}
+\newcommand{\ees}{\end{equation*}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\usepackage{textpos}
+ 
+\newif\ifplacelogo % create a new conditional
+\placelogotrue % set it to true
+\logo{\ifplacelogo\color{red}\rule{.5cm}{.5cm}\fi} % replace with your own command
+\logo{\ifplacelogo\includegraphics[height=0.70cm]{UoS_coat_flat_dark.pdf}\fi}
+
+\newcommand{\bdef}{\begin{block}{Definition}}
+
+\institute[University of Sheffield]{\normalsize \textcolor{SU_blue}{Department of Automatic Control and Systems Engineering\\ University of Sheffield}}
+
+\title[Short title here]{Insert title}
+\author[Department of Automatic Control and Systems Engineering]{\textcolor{medsea}{Shiv Gangapersad\\ \texttt{sjgangapersad1@sheffield.ac.uk}}}
+\date{June 2019}
+
+\begin{document}
+\maketitle
+%% insert slides here
+\end{document}
