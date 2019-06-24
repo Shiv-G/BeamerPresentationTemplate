@@ -1,7 +1,7 @@
 \documentclass[8pt]{beamer}
 %\setbeamersize{text margin left=20pt,text margin right=25pt}
-%\usepackage{lmodern}
-\usepackage[scaled=0.92]{helvet}
+\usepackage{lmodern}
+%\usepackage[scaled=0.92]{helvet}
 \usepackage[T1]{fontenc}
 \usepackage{subfigure}
 \usepackage{amssymb}
@@ -9,7 +9,8 @@
 \usepackage{dsfont}
 \usepackage{bm}
 \mode<presentation>
-\usecolortheme[cmyk={.66,0.36,0,0.3}]{structure}
+%\usecolortheme[cmyk={.66,0.36,0,0.3}]{structure} % blue theme
+\usecolortheme[cmyk={.37,0.66,0,0.3}]{structure} %purple theme
 \usepackage{IEEEtrantools}
 \useoutertheme{split}
 \useoutertheme{default}
@@ -29,6 +30,7 @@
 
 \definecolor{SU_blue}{RGB}{60, 115, 179}
 \definecolor{medsea}{RGB}{60,179,113}
+\definecolor{RoyalPurple}{RGB}{113, 60, 179}
 \definecolor{red}{RGB}{245,0,0}
 
 \setbeamercolor*{title}{use=structure,fg=white,bg=structure.fg,}
@@ -87,7 +89,7 @@
 
 \newcommand{\bdef}{\begin{block}{Definition}}
 
-\institute[University of Sheffield]{\normalsize \textcolor{SU_blue}{Department of Automatic Control and Systems Engineering\\ University of Sheffield}}
+\institute[University of Sheffield]{\normalsize \textcolor{RoyalPurple}{Department of Automatic Control and Systems Engineering\\ University of Sheffield}}
 
 \title[Short title here]{Insert title}
 \author[Department of Automatic Control and Systems Engineering]{\textcolor{medsea}{Shiv Gangapersad\\ \texttt{sjgangapersad1@sheffield.ac.uk}}}
